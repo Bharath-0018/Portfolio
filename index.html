@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of Bharath P - Electronics & Communication Student and Aspiring Software Developer from Dindigul, Tamil Nadu.">
+  <title>BHARATH P | Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="glass-nav">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        BHARATH P
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="assets/resume.pdf" download class="btn btn-secondary resume-btn-mobile">
+          <i data-lucide="download"></i> Resume
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <a href="assets/resume.pdf" download class="btn btn-secondary resume-btn-desktop">
+          <i data-lucide="download"></i> Resume
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home / Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="section-container hero-container">
+        <div class="hero-text animate-fade-in-left">
+          <div class="badge-container">
+            <span class="welcome-badge"><i data-lucide="sparkles"></i> Welcome to my portfolio</span>
+          </div>
+          <h1>Hi, I'm <span class="text-gradient">BHARATH P</span></h1>
+          <p class="tagline">Electronics & Communication Student | Aspiring Embedded Engineer | Circuit Analyst & Software Developer</p>
+          <p class="location"><i data-lucide="map-pin"></i> Dindigul, Tamil Nadu, India</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Get In Touch <i data-lucide="arrow-right"></i></a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+          </div>
+          <div class="social-links-hero">
+            <a href="https://github.com/Bharath-0018" target="_blank" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="social-logo-svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/bharath0018/" target="_blank" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="social-logo-svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+            </a>
+            <a href="https://leetcode.com/u/Bharath784593/" target="_blank" aria-label="LeetCode">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="social-logo-svg"><path d="M16.102 17.93l-2.69 2.607c-.466.467-1.111.668-1.738.586a3.247 3.247 0 0 1-2.254-1.539l-4.9-4.9a3.262 3.262 0 0 1 0-4.607l5.474-5.305c.458-.458 1.13-.67 1.758-.588a3.247 3.247 0 0 1 2.253 1.539l.49.49a.83.83 0 0 1-.16 1.258l-.208.135a.83.83 0 0 1-1.017-.116l-.49-.49a1.648 1.648 0 0 0-2.287-.087l-5.474 5.305a1.65 1.65 0 0 0 0 2.327l4.9 4.9a1.639 1.639 0 0 0 2.254.088l2.69-2.607a.83.83 0 0 1 1.17 1.17zm.62-11.59l4.9 4.9a3.262 3.262 0 0 1 0 4.607l-5.474 5.305c-.458.458-1.13.67-1.758.588a3.247 3.247 0 0 1-2.253-1.539l-.49-.49a.83.83 0 0 1 .16-1.258l.208-.135a.83.83 0 0 1 1.017.116l.49.49a1.648 1.648 0 0 0 2.287-.087l5.474-5.305a1.65 1.65 0 0 0 0-2.327l-4.9-4.9a1.639 1.639 0 0 0-2.254-.088l-2.69 2.607a.83.83 0 0 1-1.17-1.17l2.69-2.607c.466-.467 1.111-.668 1.738-.586a3.247 3.247 0 0 1 2.254 1.539l.49.49z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual animate-fade-in-right">
+          <div class="profile-frame">
+            <div class="glow-effect"></div>
+            <img src="assets/profile.jpg" alt="Bharath P" class="hero-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-reveal">
+      <div class="section-container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-visual">
+            <div class="about-img-container">
+              <img src="assets/profile.jpg" alt="Bharath P Profile" class="about-img">
+            </div>
+          </div>
+          <div class="about-text">
+            <h3>Pursuing Engineering & Code</h3>
+            <p class="bio">
+              I am currently pursuing my <strong>B.E. in Electronics and Communication Engineering (2023–2027)</strong> at <strong>V.S.B. College of Engineering Technical Campus</strong>, maintaining a <strong>CGPA of 7.25</strong>. 
+            </p>
+            <p class="bio">
+              My academic background in ECE bridges the gap between hardware and software, inspiring me to design smart systems. I have a strong passion for software development, problem-solving, and building impactful applications. 
+            </p>
+            <div class="interests-grid">
+              <div class="interest-item">
+                <i data-lucide="brain-circuit"></i>
+                <div>
+                  <h4>AI Concepts</h4>
+                  <p>Exploring machine learning models & neural networks</p>
+                </div>
+              </div>
+              <div class="interest-item">
+                <i data-lucide="terminal"></i>
+                <div>
+                  <h4>Java Programming</h4>
+                  <p>Object-oriented concepts, algorithms, and logic</p>
+                </div>
+              </div>
+              <div class="interest-item">
+                <i data-lucide="database"></i>
+                <div>
+                  <h4>SQL</h4>
+                  <p>Writing structured queries & working with relational databases</p>
+                </div>
+              </div>
+              <div class="interest-item">
+                <i data-lucide="cpu"></i>
+                <div>
+                  <h4>Embedded & IoT</h4>
+                  <p>Interfacing sensors, Arduino, and embedded systems</p>
+                </div>
+              </div>
+              <div class="interest-item">
+                <i data-lucide="activity"></i>
+                <div>
+                  <h4>Circuit Analysis</h4>
+                  <p>Designing and analyzing electronic and electrical circuits</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section scroll-reveal">
+      <div class="section-container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1: Smart Car Parking -->
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img src="assets/parking_project.jpg" alt="Smart Car Parking System Using Arduino" class="project-img">
+              <div class="project-tag">IoT & Embedded</div>
+            </div>
+            <div class="project-info">
+              <h3>Smart Car Parking System</h3>
+              <p class="project-year"><i data-lucide="calendar"></i> 2024</p>
+              <p class="project-desc">
+                An intelligent hardware and software solution that checks parking slot availability in real time. It uses infrared sensors connected to an Arduino microcontroller to detect vehicle occupancy. In software, I created a web application using HTML, CSS, and JavaScript that displays real-time slot updates for users.
+              </p>
+              <div class="tech-stack-badges">
+                <span>Arduino</span>
+                <span>IR Sensors</span>
+                <span>C++ / Arduino IDE</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>IoT Design</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Bharath-0018" target="_blank" class="btn-project-link">
+                  <i data-lucide="github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Student Database Management System -->
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <!-- Using a CSS gradient for the second project to keep it visual but different -->
+              <div class="project-img-placeholder-gradient">
+                <i data-lucide="database" class="placeholder-icon"></i>
+              </div>
+              <div class="project-tag">Software Development</div>
+            </div>
+            <div class="project-info">
+              <h3>Student Database System</h3>
+              <p class="project-year"><i data-lucide="calendar"></i> 2025</p>
+              <p class="project-desc">
+                Developed a lightweight database application to store, search, and manage student details efficiently. This project utilizes Java for core application logic and SQL for relational data management.
+              </p>
+              <div class="tech-stack-badges">
+                <span>Java</span>
+                <span>SQL</span>
+                <span>JDBC</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Bharath-0018" target="_blank" class="btn-project-link">
+                  <i data-lucide="github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section scroll-reveal">
+      <div class="section-container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        
+        <h3 class="skills-subtitle">Technical Skills</h3>
+        <div class="skills-grid">
+          <!-- Skill 1 -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="coffee" class="skill-icon text-java"></i>
+            </div>
+            <h3>Java</h3>
+            <p>Object-Oriented Programming, Data Structures, and Core Application Logic</p>
+          </div>
+          <!-- Skill 2 -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="globe" class="skill-icon text-web"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Creating clean, modern, and responsive user interfaces using HTML5, CSS3, and JavaScript</p>
+          </div>
+          <!-- Skill 3 -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="cpu" class="skill-icon text-iot"></i>
+            </div>
+            <h3>Embedded Systems & IoT</h3>
+            <p>Designing circuits, microcontrollers, sensor integration, and automation systems</p>
+          </div>
+          <!-- Skill 4 -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="database" class="skill-icon text-sql"></i>
+            </div>
+            <h3>SQL</h3>
+            <p>Writing queries, designing database tables, and managing relational data</p>
+          </div>
+        </div>
+
+        <h3 class="skills-subtitle" style="margin-top: 48px;">Non-Technical Skills</h3>
+        <div class="skills-grid">
+          <!-- Non-tech Skill 1 -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="users" class="skill-icon text-teamwork"></i>
+            </div>
+            <h3>Teamwork</h3>
+            <p>Collaborating effectively in projects and group activities</p>
+          </div>
+          <!-- Non-tech Skill 2 -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="lightbulb" class="skill-icon text-problem"></i>
+            </div>
+            <h3>Problem-Solving</h3>
+            <p>Logical thinking, aptitude practice, innovative solutions</p>
+          </div>
+          <!-- Non-tech Skill 3 -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="award" class="skill-icon text-leadership"></i>
+            </div>
+            <h3>Leadership</h3>
+            <p>Guiding peers, taking initiative in projects</p>
+          </div>
+          <!-- Non-tech Skill 4 -->
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="sparkles" class="skill-icon text-creativity"></i>
+            </div>
+            <h3>Creativity</h3>
+            <p>Innovative ideas like Smart Car Parking System</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Certifications Section -->
+    <section id="certifications" class="certifications-section scroll-reveal">
+      <div class="section-container">
+        <h2 class="section-title">Experience & Credentials</h2>
+        <div class="certifications-grid">
+          <!-- Column 1: Internships -->
+          <div class="cert-column">
+            <h3 class="cert-column-title"><i data-lucide="briefcase"></i> Internships</h3>
+            
+            <!-- Internship 1 -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <span class="cert-platform">Tamizhan Skills</span>
+                <span class="cert-date">2025</span>
+              </div>
+              <h3>Web Development</h3>
+              <p class="cert-org">Internship at Tamizhan Skills</p>
+              <div class="cert-footer">
+                <div class="cert-tags">
+                  <span>Web Dev</span>
+                  <span>Frontend</span>
+                  <span>HTML/CSS/JS</span>
+                </div>
+                <button class="btn-text-action open-cert-modal" data-cert="assets/Tamizhan_Skills.png">
+                  See Certificate <i data-lucide="eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Internship 2 -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <span class="cert-platform">Zekatix Technologies</span>
+                <span class="cert-date">2024</span>
+              </div>
+              <h3>Embedded Systems & IoT</h3>
+              <p class="cert-org">Internship at Zekatix Technologies</p>
+              <div class="cert-footer">
+                <div class="cert-tags">
+                  <span>Embedded</span>
+                  <span>IoT</span>
+                  <span>Hardware</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Workshops -->
+          <div class="cert-column">
+            <h3 class="cert-column-title"><i data-lucide="presentation"></i> Workshops</h3>
+            
+            <!-- Workshop 1 -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <span class="cert-platform">Study Comrade</span>
+                <span class="cert-date">2025</span>
+              </div>
+              <h3>Web Development</h3>
+              <p class="cert-org">2-Day Workshop by Study Comrade</p>
+              <div class="cert-footer">
+                <div class="cert-tags">
+                  <span>Web Basics</span>
+                  <span>Workshop</span>
+                  <span>2 Days</span>
+                </div>
+                <button class="btn-text-action open-cert-modal" data-cert="assets/Study_comrade.pdf">
+                  See Certificate <i data-lucide="eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Workshop 2 -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <span class="cert-platform">Ezone</span>
+                <span class="cert-date">2025</span>
+              </div>
+              <h3>Embedded System using Arduino</h3>
+              <p class="cert-org">Workshop at Ezone</p>
+              <div class="cert-footer">
+                <div class="cert-tags">
+                  <span>Arduino</span>
+                  <span>Embedded C</span>
+                  <span>Workshop</span>
+                </div>
+                <button class="btn-text-action open-cert-modal" data-cert="assets/Ezone_embedded_workshop.pdf">
+                  See Certificate <i data-lucide="eye"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3: Certifications -->
+          <div class="cert-column">
+            <h3 class="cert-column-title"><i data-lucide="award"></i> Certifications</h3>
+            
+            <!-- Cert 1 -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <span class="cert-platform">Coursera</span>
+                <span class="cert-date">2025</span>
+              </div>
+              <h3>FullStack Web Development</h3>
+              <p class="cert-org">Issued by Coursera Authorized Partner</p>
+              <div class="cert-footer">
+                <div class="cert-tags">
+                  <span>Frontend</span>
+                  <span>Backend</span>
+                  <span>Web Stack</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cert 2 -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <span class="cert-platform">Coursera</span>
+                <span class="cert-date">2024</span>
+              </div>
+              <h3>Embedded System and IoT</h3>
+              <p class="cert-org">Issued by Coursera Authorized Partner</p>
+              <div class="cert-footer">
+                <div class="cert-tags">
+                  <span>Arduino</span>
+                  <span>Firmware</span>
+                  <span>Sensors</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cert 3 -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <span class="cert-platform">Infosys Springboard</span>
+                <span class="cert-date">2025</span>
+              </div>
+              <h3>IoT & Electronics Course</h3>
+              <p class="cert-org">Issued by Infosys</p>
+              <div class="cert-footer">
+                <div class="cert-tags">
+                  <span>IoT</span>
+                  <span>Electronics</span>
+                  <span>Sensors</span>
+                </div>
+                <button class="btn-text-action open-cert-modal" data-cert="assets/infosys_iot_electronics.pdf">
+                  See Certificate <i data-lucide="eye"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+      <div class="section-container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-layout">
+          <!-- Info Column -->
+          <div class="contact-info-panel">
+            <h3>Let's Connect</h3>
+            <p>I am always open to discussing software development opportunities, IoT projects, or academic collaborations. Feel free to reach out!</p>
+            
+            <div class="contact-details">
+              <div class="detail-item">
+                <div class="detail-icon"><i data-lucide="mail"></i></div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:bharathperumal09@gmail.com">bharathperumal09@gmail.com</a>
+                </div>
+              </div>
+              
+              <div class="detail-item">
+                <div class="detail-icon"><i data-lucide="phone"></i></div>
+                <div>
+                  <h4>Phone</h4>
+                  <a href="tel:+917845938580">+91 78459 38580</a>
+                </div>
+              </div>
+              
+              <div class="detail-item">
+                <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <h4>Location</h4>
+                  <span>Dindigul, Tamil Nadu, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links-contact">
+              <a href="https://github.com/Bharath-0018" target="_blank" class="github-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="social-logo-svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/bharath0018/" target="_blank" class="linkedin-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="social-logo-svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://leetcode.com/u/Bharath784593/" target="_blank" class="leetcode-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="social-logo-svg"><path d="M16.102 17.93l-2.69 2.607c-.466.467-1.111.668-1.738.586a3.247 3.247 0 0 1-2.254-1.539l-4.9-4.9a3.262 3.262 0 0 1 0-4.607l5.474-5.305c.458-.458 1.13-.67 1.758-.588a3.247 3.247 0 0 1 2.253 1.539l.49.49a.83.83 0 0 1-.16 1.258l-.208.135a.83.83 0 0 1-1.017-.116l-.49-.49a1.648 1.648 0 0 0-2.287-.087l-5.474 5.305a1.65 1.65 0 0 0 0 2.327l4.9 4.9a1.639 1.639 0 0 0 2.254.088l2.69-2.607a.83.83 0 0 1 1.17 1.17zm.62-11.59l4.9 4.9a3.262 3.262 0 0 1 0 4.607l-5.474 5.305c-.458.458-1.13.67-1.758.588a3.247 3.247 0 0 1-2.253-1.539l-.49-.49a.83.83 0 0 1 .16-1.258l.208-.135a.83.83 0 0 1 1.017.116l.49.49a1.648 1.648 0 0 0 2.287-.087l5.474-5.305a1.65 1.65 0 0 0 0-2.327l-4.9-4.9a1.639 1.639 0 0 0-2.254-.088l-2.69 2.607a.83.83 0 0 1-1.17-1.17l2.69-2.607c.466-.467 1.111-.668 1.738-.586a3.247 3.247 0 0 1 2.254 1.539l.49.49z"/></svg>
+                LeetCode
+              </a>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact-form-panel">
+            <p class="form-instruction">Visitors can contact me directly through this form. All messages will be sent straight to my email inbox for quick response.</p>
+            <form id="contactForm" action="https://formspree.io/f/xrewvoeo" method="POST">
+
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required
+                       minlength="2" maxlength="80"
+                       pattern="[A-Za-z\s\.\-']+"
+                       title="Please enter a valid name (letters, spaces, hyphens, or apostrophes)"
+                       placeholder="John Doe"
+                       autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required
+                       maxlength="120"
+                       autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required
+                       minlength="3" maxlength="150"
+                       placeholder="Inquiry about software project"
+                       autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required
+                          minlength="10" maxlength="2000"
+                          placeholder="Hello Bharath, I'd like to collaborate..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-full">
+                Send Message <i data-lucide="send"></i>
+              </button>
+            </form>
+            <div id="formFeedback" class="form-feedback hidden">
+              <i data-lucide="check-circle" class="success-icon"></i>
+              <span>Your message has been sent successfully!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="copyright">&copy; <span id="currentYear">2026</span> BHARATH P. All rights reserved.</p>
+      <p class="made-with">Built with HTML, CSS & JavaScript</p>
+      <a href="#home" class="scroll-to-top" aria-label="Scroll to top">
+        <i data-lucide="chevron-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Certificate Modal -->
+  <div id="certModal" class="cert-modal" aria-hidden="true" role="dialog">
+    <div class="cert-modal-backdrop"></div>
+    <div class="cert-modal-container">
+      <div class="cert-modal-header">
+        <h3 class="cert-modal-title">Certificate of Achievement</h3>
+        <div class="cert-modal-actions">
+          <a id="certDownloadLink" href="#" target="_blank" class="btn btn-secondary btn-sm" download>
+            <i data-lucide="download"></i> Download
+          </a>
+          <button id="certCloseBtn" class="cert-modal-close" aria-label="Close modal">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+      </div>
+      <div class="cert-modal-body">
+        <iframe id="certIframe" src="" frameborder="0" class="cert-iframe hidden"></iframe>
+        <div id="certImageContainer" class="cert-image-container hidden">
+          <img id="certImage" src="" alt="Certificate Image" class="cert-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
