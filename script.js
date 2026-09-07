@@ -1,20 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize Lucide Icons
   if (typeof lucide !== 'undefined') {
     lucide.createIcons();
   }
 
-  // Current Year in Footer
   const yearSpan = document.getElementById('currentYear');
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  // --- Dark/Light Mode Theme Toggle ---
   const themeToggleBtn = document.getElementById('themeToggle');
   const htmlElement = document.documentElement;
 
-  // Retrieve saved theme or check system preferences
   const savedTheme = localStorage.getItem('theme');
   const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -34,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('theme', newTheme);
   });
 
-  // --- Mobile Hamburger Menu ---
   const hamburgerBtn = document.getElementById('hamburgerBtn');
   const navMenu = document.getElementById('navMenu');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -52,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
   hamburgerBtn.addEventListener('click', toggleMenu);
   navLinks.forEach(link => link.addEventListener('click', closeMenu));
 
-  // --- Scroll-to-Top Button Visibility ---
   const scrollToTopBtn = document.querySelector('.scroll-to-top');
   
   const checkScroll = () => {
@@ -66,10 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   window.addEventListener('scroll', checkScroll);
-  // Initial check in case page starts scrolled
   checkScroll();
-
-  // --- Intersection Observer for Scroll Animations ---
   const scrollElements = document.querySelectorAll('.scroll-reveal');
 
   const elementInView = (el, dividend = 1) => {
@@ -98,11 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', () => {
     handleScrollAnimation();
   });
-  
-  // Trigger once on load to reveal elements in view instantly
   setTimeout(handleScrollAnimation, 150);
-
-  // --- Scroll Spy: Highlight Nav Menu Links on Scroll ---
   const sections = document.querySelectorAll('section[id]');
   
   const scrollSpy = () => {
@@ -110,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sections.forEach(current => {
       const sectionHeight = current.offsetHeight;
-      const sectionTop = current.offsetTop - 150; // offset for nav bar
+      const sectionTop = current.offsetTop - 150;
       const sectionId = current.getAttribute('id');
       const activeLink = document.querySelector(`.nav-menu a[href*=${sectionId}]`);
 
@@ -124,8 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   window.addEventListener('scroll', scrollSpy);
-
-  // --- Contact Form Submission Handler ---
   const contactForm = document.getElementById('contactForm');
   const formFeedback = document.getElementById('formFeedback');
 
@@ -154,7 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      // HTML5 client-side validation
       if (!contactForm.checkValidity()) {
         contactForm.reportValidity();
         return;
@@ -163,15 +147,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const action = contactForm.getAttribute('action');
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalBtnHTML = submitBtn.innerHTML;
-
-      // Show loading state
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<i data-lucide="loader-2" class="animate-spin"></i> Sending...';
       if (typeof lucide !== 'undefined') {
         lucide.createIcons();
       }
-
-      // Use FormData (multipart) — most reliable with Formsubmit.co
       const formData = new FormData(contactForm);
 
       fetch(action, {
@@ -180,17 +160,14 @@ document.addEventListener('DOMContentLoaded', () => {
         body: formData
       })
       .then(response => {
-        // Treat any HTTP 2xx as success
         if (response.ok) {
           return response.json().then(data => {
             console.log('Formspree response:', data);
             showFormSuccess();
           }).catch(() => {
-            // Even if JSON parse fails but status was OK, treat as success
             showFormSuccess();
           });
         }
-        // Non-2xx status
         return response.text().then(text => {
           console.error('Formspree error response:', text);
           throw new Error('Server responded with status ' + response.status);
@@ -203,8 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-
-  // --- Certificate Modal Logic ---
   const certModal = document.getElementById('certModal');
   const certIframe = document.getElementById('certIframe');
   const certImageContainer = document.getElementById('certImageContainer');
@@ -216,8 +191,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const openCertModal = (certUrl) => {
     if (!certModal) return;
-    
-    // Check if the certificate URL is an image
     const isImage = certUrl.match(/\.(png|jpe?g|gif|webp)$/i);
     
     if (isImage) {
@@ -239,16 +212,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     certModal.classList.add('active');
     certModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden'; // prevent background scrolling
+    document.body.style.overflow = 'hidden'; 
   };
 
   const closeCertModal = () => {
     if (!certModal) return;
     certModal.classList.remove('active');
     certModal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = ''; // restore background scrolling
-    
-    // Clear sources and hide elements to stop background active work
+    document.body.style.overflow = '';
     setTimeout(() => {
       if (certIframe) {
         certIframe.src = '';
@@ -282,8 +253,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (modalBackdrop) {
     modalBackdrop.addEventListener('click', closeCertModal);
   }
-
-  // Close modal on Escape key press
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && certModal && certModal.classList.contains('active')) {
       closeCertModal();
